@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="header">
+        Library
+    </div>
+    <div>
+        <button id="add">
+            <h3>ADD</h3>
+            <img src="plus-black.png" id="plus">
+        </button>
+    </div>
+    <div class="content">
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="add-container">
+        <h2>Add a book</h2>
+        <form onsubmit="return false">
+            <input type="text" id="name" required placeholder="Name">
+            <input type="text" id="book-author" required placeholder="Author">
+            <input type="number" id="pages" required placeholder="Pages">
+            <div class="read-check">
+                <label for="read" style="font-weight: bold;">Have you read it?</label>
+                <input type="checkbox" name="read" id="check">
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    <div class="footer">Made by Zironics</div>
+</body>
+</html>
